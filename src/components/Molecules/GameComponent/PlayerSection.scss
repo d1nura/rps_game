@@ -1,0 +1,35 @@
+%PlayerSection{
+    // border:1px solid black;
+    padding:10px;
+    display: flex;
+    // justify-content: space-between;
+    align-items: center;
+}
+
+.PlayerSection_Left{
+    @extend %PlayerSection;
+    justify-content: flex-end;
+    :nth-child(1){
+        order:1
+    }
+    :nth-child(2){
+        order:2
+    }
+}
+
+.PlayerSection_Right{
+    @extend %PlayerSection;
+    :nth-child(1){
+        order:2
+    }
+    :nth-child(2){
+        order:1
+    }
+}
+
+.PlayerSection_Avatar{
+    border:1px solid rgb(218, 218, 218);
+    border-radius: 5px;
+    width: 200px;
+    height:200px;
+}

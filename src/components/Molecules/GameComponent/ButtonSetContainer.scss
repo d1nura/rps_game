@@ -1,0 +1,9 @@
+.ButtonSetContainer{
+    // border:1px solid red;
+    display: flex;
+    flex-direction: column;
+    margin:10px;
+    Button{
+        margin-bottom: 5px;
+    }
+}
